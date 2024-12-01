@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+#left{
+    position:relative;
+    width: 40%;
+    height: 100%;
+    background-color:white
+}
+#lnav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
+    width:100%;
+    gap: 60px;
+}
+#lnavr{
+    display: flex;
+    justify-content: space-between;
+    align-content:end;
+    width:100%;
+}
+#lnavr a{
+    margin-right:20px;
+    width:100%;
+}
+#lnavr i{
+    color:blue;
+
+}
+#left #textcenter{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+#textcenter h1{
+    font-size:100px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size:12px;
+    line-height:20px;
+    margin-top:20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color:black;
+    border-bottom:1px solid black;
+    padding-bottom: 5px;
+    font-size:13px;
+    font-weight: 600;
+    opacity:.6;
+    
+}
+#right{
+    width:60%;
+    height:100%;
+    background-color: bisque;
+}
+#rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(172, 237, 215);
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image:url("https://images.unsplash.com/photo-1732823155196-f2bd63985130?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D");
+    background-size: cover;
+    background-position:center;
+}
+#rtopleft{
+    width: 50%;
+    height: 100%;
+    background-image:url("https://plus.unsplash.com/premium_photo-1732730224047-00149be53cf1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position:center;
+}
+#rtopright{
+    width:50%;
+    height: 100%;
+    background-image:url("https://plus.unsplash.com/premium_vector-1732820665266-117c6317cb0f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxpbGx1c3RyYXRpb25zLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position:bottom;
+}
+@media(max-width:500px){
+    #main{
+        flex-direction:column;
+    }
+    #main #left{
+        width:100%;
+    }
+    #main #right{
+        width:100%;
+    }
+}
